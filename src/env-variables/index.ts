@@ -1,0 +1,8 @@
+import {
+  SECRET_KEY as SECRET_KEY_FROM_ENV,
+  TEMINAL_ID as TEMINAL_ID_FROM_ENV,
+} from '@env';
+
+export const SECRET_KEY = SECRET_KEY_FROM_ENV;
+
+export const TEMINAL_ID = TEMINAL_ID_FROM_ENV;

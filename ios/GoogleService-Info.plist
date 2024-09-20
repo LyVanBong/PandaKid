@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>99534190315-2ik7m8hg5lt7pecu5jl0s2ftvpnjf985.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.99534190315-2ik7m8hg5lt7pecu5jl0s2ftvpnjf985</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA0Op9VghvIoxOR69WY77MdQ06Rn9BmieI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>99534190315</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.reactjs.native.example.PandaKid</string>
+	<key>PROJECT_ID</key>
+	<string>panda-kid-mobile-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>panda-kid-mobile-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:99534190315:ios:e9753bc473598ab85170ae</string>
+</dict>
+</plist>
