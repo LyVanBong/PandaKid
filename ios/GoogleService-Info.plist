@@ -3,9 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>99534190315-2ik7m8hg5lt7pecu5jl0s2ftvpnjf985.apps.googleusercontent.com</string>
+	<string>99534190315-dugp0lvd0s4hrqsdj1tq2van757t7cgf.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.99534190315-2ik7m8hg5lt7pecu5jl0s2ftvpnjf985</string>
+	<string>com.googleusercontent.apps.99534190315-dugp0lvd0s4hrqsdj1tq2van757t7cgf</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>99534190315-a1qaprp8dcn89d8r6ff48aium0ie2qui.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
 	<string>AIzaSyA0Op9VghvIoxOR69WY77MdQ06Rn9BmieI</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +15,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>org.reactjs.native.example.PandaKid</string>
+	<string>com.demo.PandaKid</string>
 	<key>PROJECT_ID</key>
 	<string>panda-kid-mobile-app</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +31,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:99534190315:ios:e9753bc473598ab85170ae</string>
+	<string>1:99534190315:ios:612dbe869bf4ab945170ae</string>
 </dict>
 </plist>

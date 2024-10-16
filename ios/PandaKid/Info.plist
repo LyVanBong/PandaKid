@@ -30,6 +30,22 @@
 				<string>com.googleusercontent.apps.99534190315-2ik7m8hg5lt7pecu5jl0s2ftvpnjf985</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>app-1-99534190315-ios-612dbe869bf4ab945170ae</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.99534190315-dugp0lvd0s4hrqsdj1tq2van757t7cgf</string>
+			</array>
+		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>

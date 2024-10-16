@@ -19,6 +19,7 @@ import useStores from '../../../hooks/use-stores';
 import useLogicWords from './useLogicWords';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import auth from '@react-native-firebase/auth';
+import { TypeAccount } from '../../../model/type-account';
 
 const WordScreen = () => {
   const route = useRoute();
@@ -31,11 +32,8 @@ const WordScreen = () => {
   const uiStore: UIStore = useStores().uiStore;
   const email = auth().currentUser?.email as any;
   const isBasicAccount = async () => {
-    const typeAccount = await AsyncStorage.getItem('type_account');
-    if (JSON.parse(String(typeAccount)) === 'Basic') {
-      return true;
-    }
-    return false;
+    const data = await firestore().collection('account').doc(email).get();
+    return data.data()?.typeAccount === TypeAccount.Basic;
   };
 
   const params = route?.params as any;

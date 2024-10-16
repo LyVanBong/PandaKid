@@ -32,7 +32,9 @@ const useLogicWords = () => {
   };
 
   const playSound = async (soundUrl: any) => {
-    let sound = new Sound(soundUrl, null, (err) => {
+    const decode = decodeURI(soundUrl);
+    console.log('decode', decode, soundUrl);
+    let sound = new Sound(decode, undefined, (err) => {
       if (err) {
         console.log(err);
         return;
@@ -42,16 +44,22 @@ const useLogicWords = () => {
   };
 
   const handlePlaySound = async (item: any) => {
-    if (item?.soundUrl) {
-      playSound(item?.soundUrl);
-    } else {
-      const text = encodeURI(item?.key);
-      const urls = await getVoiceUrl(item?.key);
-      setTimeout(() => {
-        playSound(urls);
-      }, 3000);
-      // console.log(item?.key);
-    }
+    const text = encodeURI(item?.key);
+    const urls = await getVoiceUrl(item?.key);
+    setTimeout(() => {
+      playSound(urls);
+    }, 3000);
+    // if (item?.soundUrl) {
+    //   console.log('playSound');
+    //   playSound(item?.soundUrl);
+    // } else {
+    //   const text = encodeURI(item?.key);
+    //   const urls = await getVoiceUrl(text);
+    //   setTimeout(() => {
+    //     playSound(urls);
+    //   }, 3000);
+    //   // console.log(item?.key);
+    // }
   };
   return { playSound, handlePlaySound };
 };
