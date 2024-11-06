@@ -87,6 +87,7 @@ const LoginScreen = () => {
             ...profile,
           });
           const token = await e.user.getIdToken();
+          console.log('token', token);
           await Keychain.resetGenericPassword();
           await Keychain.setGenericPassword(email, password);
           await AsyncStorage.setItem('access_token', token);
@@ -95,9 +96,8 @@ const LoginScreen = () => {
           navigation.navigate(Screens.AuthenticatedNavigator as never);
         } else {
           uiStore.hideLoading();
-
-          toast.show({ type: 'error', msg: 'Đăng nhập thất bại !' });
         }
+        toast.show({ type: 'error', msg: 'Đăng nhập thất bại !' });
       })
       .catch((err) => {
         console.log(err);

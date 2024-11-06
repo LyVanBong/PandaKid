@@ -55,6 +55,7 @@ const LoginNormal = ({
           };
           await asyncStorageService.setUserProfile(userProfile);
           const token = await response.user.getIdToken();
+          console.log('token', token);
           await AsyncStorage.setItem('access_token', token);
 
           navigation.navigate(Screens.AuthenticatedNavigator as never);
